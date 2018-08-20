@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    >
+
+  <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/linearLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:orientation="horizontal"
+      android:weightSum="1.0"
+      >
+    <LinearLayout
+        android:id="@+id/linearLayoutNested"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".5"
+        android:orientation="vertical"
+        >
+      <TextView
+          android:id="@+id/textViewTitle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+          />
+      <TextView
+          android:id="@+id/textViewDescription"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+          />
+    </LinearLayout>
+    <Button
+        android:id="@+id/playSound"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_weight=".5"
+        android:text="Play!"
+        style="@style/Widget.AppCompat.Button.Colored"
+        />
+    <!--android:onClick="onStopTracking"-->
+  </LinearLayout>
+</android.support.v7.widget.CardView>
